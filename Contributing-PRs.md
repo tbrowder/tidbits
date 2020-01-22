@@ -1,6 +1,6 @@
-# Guide to contributing a pull request (PR) on a Linux host [A WORK IN PROGRESS]
+# Guide to contributing a pull request (PR) on a Linux host
 
-## Quick start guide for experienced Github users (on a Linux host)
+## Quick start guide for experienced Github users
 
 ### Part A: On Github
 
@@ -11,7 +11,7 @@
     3. Select "SSH and GPG keys" from the left-side menu
     4. Select the green "New SSH key" widget at the top right of the window
     5. Generate your SSH key pair on your local host
-    6. Copy your PUBLIC key into the window and give it a meaningfule title (such as the host name with the private key)
+    6. Copy your PUBLIC key into the window and give it a meaningful title (such as the host name with the private key)
 3. Back in this repository, fork this repository to your account by clicking on the "Fork" button at the top-right of this repository
 
 ### Part B: On your local host
@@ -98,8 +98,8 @@ CD into the new repo to check:
 ```Raku
 $ cd doc
 $ git remote -v
-origin	git@github.com:grace/doc.git (fetch)
-origin	git@github.com:grace/doc.git (push)
+origin    git@github.com:grace/doc.git (fetch)
+origin    git@github.com:grace/doc.git (push)
 ```
 
 Add the upstream repo (we will use the https protocol for read-only access):
@@ -112,10 +112,10 @@ and notice the new remotes have been added:
 
 ```Raku
 $ git remote -v
-origin	git@github.com:grace/doc.git (fetch)
-origin	git@github.com:grace/doc.git (push)
-upstream	https://github.com/raku/doc (fetch)
-upstream	https://github.com/raku/doc (push)
+origin    git@github.com:grace/doc.git (fetch)
+origin    git@github.com:grace/doc.git (push)
+upstream    https://github.com/raku/doc (fetch)
+upstream    https://github.com/raku/doc (push)
 ```
 
 Check what branches we have:
@@ -165,7 +165,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   writing-docs/STYLEGUIDE.md
+    modified:   writing-docs/STYLEGUIDE.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -197,7 +197,7 @@ index 265956373..7a0573209 100644
 
 4. When ready to submit the PR, commit your changes with a good commit message
 
-I'm happy with my changes so I commit the chages:
+I'm happy with my changes so I commit the changes:
 
 ```Raku
 $ git commit -a -m"Use better word than 'exposition' and reword the paragraph"
@@ -221,7 +221,7 @@ Total 4 (delta 3), reused 0 (delta 0)
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 remote:
 remote: Create a pull request for 'fix-typo' on GitHub by visiting:
-remote:      https://github.com/tbrowder/doc/pull/new/fix-typo
+remote:      https://github.com/grace/doc/pull/new/fix-typo
 remote:
 To github.com:tbrowder/doc.git
  * [new branch]          fix-typo -> fix-typo
