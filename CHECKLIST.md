@@ -1,4 +1,4 @@
 Checklist
 
-+ [ ] item 1
++ [x] item 1
 + [ ] item 2
